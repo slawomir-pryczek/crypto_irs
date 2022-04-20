@@ -36,3 +36,8 @@ withdraw => withdraw
 income, mining, gift/tip,donation, gift => in
 out, lost, stolen => out
 </pre>
+
+# Fetching input
+Input will be fetched from **Workdir** which is defined in cfg.go and defaults to ./in/ subdirectory. All csv and txt files will be read and data will be sorted. If the file will contain "\_off\_" inside its name it won't be included in calculations. Text files (txt) will be treated as csv. Each file can have different data organizaion which will be determined from the header.
+
+
